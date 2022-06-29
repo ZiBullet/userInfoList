@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <title>Users Information</title>
+</head>
+<body>
+    <div class="modal__chager-bg"></div>
+    <div class="modal__changer-container">
+        <form class="modal__changer-form" name="changer">
+            <div class="form__inp-name form__inp">
+                <label for="changedName">Would you like to rename <br> <b class="old__name">Name</b></label>
+                <input type="text" id="changedName" name="changedName">
+            </div>
+            <div class="form__inp-date form__inp">
+                <label for="changedAge">Would you like to edit your age <br> <b class="old__age">Age</b></label>
+                <input type="text" id="changedAge" name="changedAge">
+            </div>
+            <button class="btn__changer">Change</button>
+        </form>
+    </div>
+    <main>
+        <div class="main__container">
+            <!-- _________________User sorter form__________________ -->
+            <div class="container__heading">
+                <form name="userAdder" class="adder">
+                    <div class="user__adder-input">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name" placeholder="Bruce Lee">
+                    </div>
+                    <div class="user__adder-input">
+                        <label for="age">Возраст</label>
+                        <input name="age" id="age" type="text" placeholder="24">
+                    </div>
+                    <button class="user__adder-btn">Добавить</button>
+                </form>
+                <div class="show__userBy__type">
+                    <button class="type__changer">Таблица</button>
+                </div>
+            </div>
+            <div class="container__content">
+                <table class="users__list-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Имя студента(ки)</th>
+                            <th>Год рождения</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="users__list-card">
+                    <div class="users__teen__aged user__age">
+                    </div>
+                    <div class="line"></div>
+                    <div class="users__senior__aged user__age">
+                    </div>
+                    <div class="line"></div>
+                    <div class="users__other__aged user__age">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
